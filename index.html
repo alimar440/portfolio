@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ali Mar Ngom | Développeur Full Stack</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+    <meta name="description" content="Portfolio d'Ali Mar Ngom - Développeur Full Stack spécialisé en Laravel et Angular. Étudiant en Génie Logiciel à l'Université Gaston Berger.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-brand">
+                <span class="brand-text">Portfolio</span>
+            </div>
+            <div class="nav-right">
+                <ul class="nav-menu">
+                    <li><a href="#accueil" class="nav-link active"><i class="fas fa-home"></i>Accueil</a></li>
+                    <li><a href="#apropos" class="nav-link"><i class="fas fa-user"></i>À propos</a></li>
+                    <li><a href="#parcours" class="nav-link"><i class="fas fa-graduation-cap"></i>Parcours</a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i>Expérience</a></li>
+                    <li><a href="#projets" class="nav-link"><i class="fas fa-code"></i>Projets</a></li>
+                    <li><a href="#competences" class="nav-link"><i class="fas fa-laptop-code"></i>Compétences</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
+                    <li>
+                        <button class="music-toggle nav-link" aria-label="Toggle music">
+                            <i class="fas fa-music music-icon-on"></i>
+                            <i class="fas fa-volume-mute music-icon-off"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="theme-toggle nav-link" aria-label="Toggle theme">
+                            <i class="fas fa-moon theme-icon-dark"></i>
+                            <i class="fas fa-sun theme-icon-light"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1 class="fade-in">Ali Mar Ngom</h1>
+            <h2 class="fade-in">
+                <span class="static-text">Je suis</span>
+                <span class="dynamic-text" id="typed-text"></span>
+            </h2>
+            <p class="fade-in">Étudiant passionné en Génie Logiciel et Gestion des Données</p>
+            <div class="buttons-container">
+
+                <a href="CV_Ali_Mar.pdf" download class="btn btn-secondary">
+                    <span>Télécharger CV</span>
+                    <i class="fas fa-download"></i>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="apropos" class="section">
+        <h2 class="section-title">À propos</h2>
+        <div class="about-content">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="profile-container">
+                        <img src="images/profil.jpg" alt="Photo de profil" class="profile-img">
+                        <div class="profile-badge">
+                            <i class="fas fa-check"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-info">
+                    <div class="about-header">
+                        <h3>Computer Science Student</h3>
+                        <span class="location"><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</span>
+                    </div>
+                    <div class="about-text">
+                        <p>Titulaire d'une licence en Génie Logiciel de l'Université Gaston Berger, je suis un développeur passionné par la création d'applications web modernes et innovantes.</p>
+                        <p>Mon parcours académique et mes projets personnels m'ont permis de développer une expertise solide en développement web, particulièrement avec les frameworks modernes comme Laravel, Angular et l'utilisation de Tailwind CSS pour créer des interfaces élégantes et responsives.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projets Réalisés</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">6</span>
+                            <span class="stat-label">Mois d'Expérience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5</span>
+                            <span class="stat-label">Technologies Maîtrisées</span>
+                        </div>
+                    </div>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Développement Web Frontend</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Applications Mobiles</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-server"></i>
+                            <span>Développement Web Backend</span>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Me Contacter</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </a>
+                        <a href="#projets" class="btn btn-secondary">
+                            <span>Voir mes projets</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Parcours -->
+    <section id="parcours" class="section">
+        <h2 class="section-title">Parcours Académique</h2>
+        <div class="education-container">
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-year"> 2025 - Present</div>
+                    <div class="education-details">
+                        <h5>Master 1 en Génie Logiciel</h5>
+                        <p>Université Gaston Berger (UGB), Saint-Louis</p>
+                        <ul>
+                            <li>Spécialisation en développement logiciel</li>
+                            <li>Algorithmes avancés et structures de données</li>
+                            <li>Architecture logicielle et patterns de conception</li>
+                            <li>Développement d'applications distribuées</li>
+                            <li>Intelligence artificielle et apprentissage automatique</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <div class="education-year">2021 - 2024</div>
+                    <div class="education-details">
+                        <h5>Licence en Génie Logiciel</h5>
+                        <p>Université Gaston Berger (UGB), Saint-Louis</p>
+                        <ul>
+                            <li>Programmation orientée objet</li>
+                            <li>Administration de bases de données et systèmes d'information</li>
+                            <li>Développement web et mobile</li>
+                            <li>Génie logiciel et méthodologies agiles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Expérience -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Expérience</h2>
+        <div class="experience-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Avril 2025 - Juin 2025</div>
+                        <h3>Stage Laravel Développeur</h3>
+                        <h4>Mirahtec</h4>
+                        <ul class="timeline-details">
+                            <li>Développement et maintenance d'applications</li>
+                            <li>Collaboration avec l'équipe de développement</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Laravel</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h3>Projet Académique</h3>
+                        <h4>CCOS - Université Gaston Berger (UGB)</h4>
+                        <ul class="timeline-details">
+                            <li>Développement d'une application mobile de vente et echange de produits d'occasion (Colobane Online)	</li>
+                            <li>Travail en équipe de 3 personnes</li>
+                            <li>Utilisation de Flutter et Firebase</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span>Flutter</span>
+                            <span>Dart</span>
+                            <span>Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projets" class="section">
+        <h2 class="section-title">Mes Projets</h2>
+        <!-- Projets visibles initialement -->
+        <div class="projects-grid visible-projects">
+            
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🚛</div>
+                    <h3>SAAT Fleet Management</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/saat/saatDashboard.png" alt="SAAT Fleet Management System" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Système complet de gestion de flotte développé en entreprise pour SAAT. Solution professionnelle incluant la gestion des utilisateurs, dépenses, paiements, missions, tracteurs, remorques et maintenance. Interface administrative avec tableaux de bord et rapports détaillés.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>Laravel</span>
+                    <span>MySQL</span>
+                    <span>JavaScript</span>
+                    <span>Bootstrap</span>
+                </div>
+                <span class="confidential-tag">[Code Source Confidentiel]</span>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🎮</div>
+                    <h3>TIC-TAC-TOE_GAME</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/tictactoe/TIC-TAC-TOE_GAME.png" alt="Jeu de Morpion" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Jeu de Morpion (Tic-tac-toe) interactif avec interface graphique moderne. Jouez contre un ami en mode deux joueurs, avec choix personnalisé des symboles (X ou O), animations fluides de victoire, et interface intuitive. Le jeu inclut un système de score et des effets visuels pour une expérience de jeu immersive.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://github.com/alimar440/TIC-TAC-TOE_GAME" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+                <a href="https://alimar440.github.io/SyllaConsulting/" class="project-link" target="_blank">
+                    <i class="fas fa-gamepad"></i> Jouer
+                </a>
+                
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🚀</div>
+                    <h3>Jaapalanté</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/jaapalante/jaapalanteHome.png" alt="Application Jaapalanté" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Application mobile connectant des utilisateurs ayant besoin de services avec de jeunes prestataires locaux au Sénégal. Développement des interfaces Login, Home et Notification.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>Flutter</span>
+                    <span>Firebase</span>
+                    <span>Dart</span>
+                </div>
+                <a href="https://github.com/alimar440/jaappalante" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+            </div>
+        </div>
+
+        <!-- Projets cachés initialement -->
+         
+        <div class="projects-grid hidden-projects">
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">📦</div>
+                    <h3>TurboSearch</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/TurboSearch/turboSearchHome.png" alt="Application TurboSearch" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Application de gestion de parc automobile avec recherche rapide via tables de hachage. Interface graphique intuitive et système de recherche optimisé. Inclut une analyse comparative des performances des différentes fonctions de hachage avec visualisation graphique des résultats.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>C++</span>
+                    <span>Qt</span>
+                    <span>SQLite</span>
+                </div>
+                <a href="https://github.com/alimar440/TurboSearch" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+            </div>
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">✈️</div>
+                    <h3>Sylla Consulting</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/sylla-consulting.png" alt="Site Sylla Consulting" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Site vitrine moderne pour une agence de voyage avec design responsive et composants réutilisables. Animations fluides et galerie interactive optimisée.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>HTML5</span>
+                    <span>Tailwind CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="https://github.com/alimar440/SyllaConsulting" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+                <a href="https://alimar440.github.io/SyllaConsulting/" class="project-link" target="_blank">
+                    <i class="fas fa-gamepad"></i> Live Demo
+                </a>
+            </div>
+
+            
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🧠</div>
+                    <h3>UGB Brain Battle</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/brain-battle.png" alt="Jeu UGB Brain Battle" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Jeu web éducatif de quiz avec système de classement. Développement du flux de jeu et chargement dynamique des questions.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>JSON</span>
+                </div>
+                <a href="https://github.com/alimar440/UGBBrainBattle" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">💻</div>
+                    <h3>Logiciel(PC) de simulation d'Algorithmes d'Ordonnancement</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/simulation.png" alt="Simulation d'Algorithmes d'Ordonnancement" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Logiciel interactif de simulation d'algorithmes d'ordonnancement (PCTE, Tourniquet, FIFO, PTCER, PGPR) avec visualisation en temps réel et interface intuitive pour l'analyse comparative des performances.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>C++</span>
+                    <span>Qt</span>
+                    <span>SQLite</span>
+                </div>
+                <a href="https://github.com/alimar440/projetSE" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">📚</div>
+                    <h3>Samay Manga</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/dashboard.png" alt="Dashboard Samay-Manga" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Dashboard moderne dédié aux amateurs de manga, manhua et manhwa. Interface épurée offrant un historique de lecture, une bibliothèque organisée et un design responsive. Développé en HTML et CSS pur pour une expérience utilisateur fluide et intuitive.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                </div>
+                <a href="https://github.com/alimar440/Manhua-Dashboard" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+                <a href="https://alimar440.github.io/Manhua-Dashboard/" class="project-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> Voir le site
+                </a>
+            </div>
+        </div>
+
+        <div class="buttons-container">
+            <button class="voir-plus">
+                <span class="voir-plus-text">Voir plus de projets</span>
+                <span class="voir-moins-text">Voir moins</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="competences" class="section">
+        <h2 class="section-title">Compétences</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Langages de programmation</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-php"></i>
+                        <span>Php</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>C/C++</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <span>Lisp</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks & Outils</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-laravel"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-angular"></i>
+                        <span>Angular</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-wind"></i>
+                        <span>Tailwind CSS</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Flutter</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <a href="mailto:contact@alimar.com" class="email-link">
+                    <i class="fas fa-envelope"></i>
+                    contact@alimar.com
+                </a>
+                <div class="social-links">
+                    <a href="https://github.com/alimar440" target="_blank" class="social-link github" aria-label="Github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ali-mar-ngom-311603173/" target="_blank" class="social-link linkedin" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://wa.me/221777605616" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024-2025 - Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Modal pour les images -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-navigation">
+                <button class="nav-btn prev-btn" aria-label="Image précédente">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="nav-btn next-btn" aria-label="Image suivante">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <img id="modalImage" src="" alt="Image en grand format">
+            <div class="modal-details">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <div id="modalTechStack" class="tech-stack"></div>
+                <div class="modal-pagination">
+                    <span id="currentImageNum">1</span>/<span id="totalImages">4</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
