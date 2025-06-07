@@ -459,32 +459,32 @@ const jaapalanteImages = [
 // Configuration des images pour le projet TurboSearch
 const turboSearchImages = [
     {
-        src: 'images/projects/turboSearch/TurboSearchHome.png',
+        src: 'images/projects/turboSearch/turboSearchHome.png',
         alt: 'Accueil TurboSearch',
         description: 'Page d\'accueil de l\'application avec l\'interface principale'
     },
     {
-        src: 'images/projects/turboSearch/TurboSearchInsertion.png',
+        src: 'images/projects/turboSearch/turboSearchInsertion.png',
         alt: 'Insertion de véhicule',
         description: 'Interface d\'ajout de nouveau véhicule dans le système'
     },
     {
-        src: 'images/projects/turboSearch/TurboSearchSuppretion.png',
+        src: 'images/projects/turboSearch/turboSearchSuppretion.png',
         alt: 'Suppression de véhicule',
         description: 'Interface de suppression de véhicule du parc automobile'
     },
     {
-        src: 'images/projects/turboSearch/TurboSearchDatabase.png',
+        src: 'images/projects/turboSearch/turboSearchDatabase.png',
         alt: 'Base de données',
         description: 'Vue de la base de données des véhicules'
     },
     {
-        src: 'images/projects/turboSearch/TurboSearchRecherche.png',
+        src: 'images/projects/turboSearch/turboSearchRecherche.png',
         alt: 'Recherche de véhicule',
         description: 'Interface de recherche rapide avec système de hachage'
     },
     {
-        src: 'images/projects/turboSearch/TurboSearchComparaison.png',
+        src: 'images/projects/turboSearch/turboSearchComparaison.png',
         alt: 'Comparaison des fonctions de hachage',
         description: 'Graphique comparatif des performances des différentes fonctions de hachage utilisées'
     }
