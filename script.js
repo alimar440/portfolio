@@ -509,6 +509,40 @@ const tictactoeImages = [
     }
 ];
 
+// Configuration des images pour le projet Inscription Pédagogique
+const inscriptionImages = [
+    {
+        src: 'images/projects/inscription/login.png',
+        alt: 'Page de connexion',
+        description: 'Interface de connexion sécurisée pour les étudiants et administrateurs'
+    },
+    {
+        src: 'images/projects/inscription/inscription.png',
+        alt: 'Page d\'accueil',
+        description: 'Page d\'accueil du système d\'inscription pédagogique'
+    },
+    {
+        src: 'images/projects/inscription/administrationPublieMessagePourEtudiant.png',
+        alt: 'Publication de Messages',
+        description: 'Interface administrateur pour la publication de messages aux étudiants'
+    },
+    {
+        src: 'images/projects/inscription/informationEtudiant.png',
+        alt: 'Informations Étudiant',
+        description: 'Vue détaillée des informations de l\'étudiant'
+    },
+    {
+        src: 'images/projects/inscription/inscriptionEtudiant.png',
+        alt: 'Inscription Étudiant',
+        description: 'Processus d\'inscription pour les étudiants'
+    },
+    {
+        src: 'images/projects/inscription/portailEtudiant.png',
+        alt: 'Portail Étudiant',
+        description: 'Interface principale du portail étudiant'
+    }
+];
+
 let currentImageIndex = 0;
 let currentImages = [];
 
@@ -539,6 +573,9 @@ function openModal(projectCard) {
         currentImageIndex = 0;
     } else if (img.src.includes('tictactoe')) {
         currentImages = tictactoeImages;
+        currentImageIndex = 0;
+    } else if (img.src.includes('inscription')) {
+        currentImages = inscriptionImages;
         currentImageIndex = 0;
     } else {
         currentImages = [];

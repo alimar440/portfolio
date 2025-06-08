@@ -1653,21 +1653,41 @@ button:hover ~ .custom-cursor,
 }
 
 .modal-details {
-    padding: 15px;
-    background-color: var(--bg-color);
-    border-radius: 0 0 8px 8px;
+    padding: 1.5rem;
+    background: var(--card-bg);
+    border-top: 1px solid var(--border-color);
 }
 
 .modal-details h3 {
-    margin: 0 0 10px 0;
-    color: var(--text-color);
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 .modal-details p {
-    color: var(--text-color);
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     line-height: 1.6;
+    color: var(--text-color);
+}
+
+[data-theme="light"] .modal-details {
+    background: var(--section-bg);
+    box-shadow: var(--shadow-sm);
+}
+
+[data-theme="light"] .modal-content {
+    background: var(--section-bg);
+    color: var(--text-color);
+}
+
+[data-theme="light"] #modalImage {
+    border: 1px solid var(--border-color);
+}
+
+[data-theme="light"] .modal-pagination {
+    color: var(--text-color);
+    background: var(--section-bg);
+    border: 1px solid var(--border-color);
 }
 
 .modal-navigation {
@@ -1844,4 +1864,28 @@ button:hover ~ .custom-cursor,
 ::-moz-selection {
     background-color: var(--flag-green);
     color: white;
+}
+
+.project-features {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.project-features li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.project-features li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.project-features strong {
+    color: var(--accent-color);
+    font-weight: 600;
 }
