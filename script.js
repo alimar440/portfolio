@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const roles = [
     "Étudiant en Informatique",
     "Laravel Développer",
-    "Angular Développer (novice)",
+    "Angular Développer ",
     "Développeur Full Stack",
     "Otaku",
 ];
