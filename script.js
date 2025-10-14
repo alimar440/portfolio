@@ -247,11 +247,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // Animation du texte typé
 const roles = [
     "Étudiant en Informatique",
-    "Laravel Développer",
-    "Angular Développer ",
+    "Développeur Laravel",
+    "Développeur Angular",
     "Développeur Full Stack",
-    "Otaku",
+    "Développeur Mobile (Flutter)",
 ];
+
 
 const typedTextSpan = document.getElementById("typed-text");
 let roleIndex = 0;
