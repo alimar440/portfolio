@@ -118,7 +118,7 @@ function setActiveLink() {
         const sectionTop = section.offsetTop - 100;
         const sectionHeight = section.clientHeight;
         const sectionId = section.getAttribute('id');
-        
+
         if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
             navLinks.forEach(link => {
                 link.classList.remove('active');
@@ -135,7 +135,7 @@ function reveal() {
     sections.forEach(section => {
         const sectionTop = section.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
-        
+
         if (sectionTop < windowHeight - 150) {
             section.classList.add('reveal', 'active');
         }
@@ -157,13 +157,13 @@ if (voirPlusBtn && hiddenProjects) {
     voirPlusBtn.addEventListener('click', () => {
         hiddenProjects.classList.toggle('show');
         voirPlusBtn.classList.toggle('active');
-        
+
         if (hiddenProjects.classList.contains('show')) {
             voirPlusText.style.display = 'none';
             voirMoinsText.style.display = 'inline';
             // Animation smooth scroll vers les nouveaux projets
             setTimeout(() => {
-                hiddenProjects.scrollIntoView({ 
+                hiddenProjects.scrollIntoView({
                     behavior: 'smooth',
                     block: 'start'
                 });
@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Animation du texte typé
 const roles = [
-     "Étudiant en Informatique",
+    "Étudiant en Informatique",
     "Développeur Full Stack",
     "Dev backend Laravel",
     "Dev frontend Angular",
@@ -264,7 +264,7 @@ function typeText() {
     const currentRole = roles[roleIndex];
     const shouldDelete = isDeleting && charIndex > 0;
     const shouldWrite = !isDeleting && charIndex < currentRole.length;
-    
+
     if (shouldDelete) {
         // Effacer le texte
         typedTextSpan.textContent = currentRole.substring(0, charIndex - 1);
@@ -291,7 +291,7 @@ function typeText() {
     const writeSpeed = 80;
     const deleteSpeed = 50;
     const nextTick = isPaused ? 1000 :
-                    isDeleting ? deleteSpeed : writeSpeed;
+        isDeleting ? deleteSpeed : writeSpeed;
 
     setTimeout(typeText, nextTick);
 }
@@ -313,7 +313,7 @@ let speed = 0.2; // Vitesse de suivi du second point
 document.addEventListener('mousemove', (e) => {
     mouseX = e.clientX;
     mouseY = e.clientY;
-    
+
     // Position du curseur principal
     cursor.style.left = mouseX + 'px';
     cursor.style.top = mouseY + 'px';
@@ -324,11 +324,11 @@ function animateTrailingDot() {
     // Calcul de la nouvelle position avec effet de lissage
     cursorX += (mouseX - cursorX) * speed;
     cursorY += (mouseY - cursorY) * speed;
-    
+
     // Application de la position au point qui suit
     cursor.style.setProperty('--trail-x', (cursorX - mouseX) + 'px');
     cursor.style.setProperty('--trail-y', (cursorY - mouseY) + 'px');
-    
+
     requestAnimationFrame(animateTrailingDot);
 }
 
@@ -544,6 +544,88 @@ const inscriptionImages = [
     }
 ];
 
+// Configuration des images pour le projet NAFAR
+const nafarImages = [
+    {
+        src: 'images/projects/nafar/nafarHome.png',
+        alt: 'Accueil Nafar',
+        description: 'Page d\'accueil de la plateforme de révision'
+    },
+    {
+        src: 'images/projects/nafar/listeVideo.png',
+        alt: 'Organisation Vidéo',
+        description: 'Organisation structurée des vidéos YouTube pour un parcours d\'apprentissage cohérent'
+    },
+    {
+        src: 'images/projects/nafar/visionnageVideoAvecResume.png',
+        alt: 'Visionnage intelligent',
+        description: 'Lecteur vidéo intégrant des résumés générés par IA pour une compréhension rapide'
+    },
+    {
+        src: 'images/projects/nafar/priseNoteIntelligent.png',
+        alt: 'Prise de notes',
+        description: 'Système de prise de notes synchronisé avec les timestamps des vidéos'
+    },
+    {
+        src: 'images/projects/nafar/chatbot.png',
+        alt: 'Assistant IA',
+        description: 'Dialoguez avec l\'assistant Claude pour obtenir des explications et approfondir les sujets'
+    },
+    {
+        src: 'images/projects/nafar/pomodoroEtSuivieProductivité.png',
+        alt: 'Productivité',
+        description: 'Mode Focus avec timer Pomodoro et statistiques de progression'
+    }
+];
+
+// Configuration des images pour le projet NeoScan
+const neoscanImages = [
+    {
+        src: 'images/projects/neoscan/homeNeoScan.jpg',
+        alt: 'Accueil NeoScan',
+        description: 'Plateforme de diagnostic assistée par IA pour la détection du cancer'
+    },
+    {
+        src: 'images/projects/neoscan/selectionRadioaAnalyser.jpg',
+        alt: 'Interface d\'analyse',
+        description: 'Interface intuitive pour l\'import et l\'analyse des images médicales'
+    },
+    {
+        src: 'images/projects/neoscan/ResultatAnalyse.jpg',
+        alt: 'Résultats de Diagnostic',
+        description: 'Affichage détaillé des résultats avec probabilités et zones détectées'
+    },
+    {
+        src: 'images/projects/neoscan/chatBotMariama.jpg',
+        alt: 'Mariama - Assistant IA',
+        description: 'Chatbot intelligent "Mariama" pour accompagner les patients'
+    },
+    {
+        src: 'images/projects/neoscan/discutionAvecMariama.jpg',
+        alt: 'Discussion Chatbot',
+        description: 'Interaction fluide avec l\'assistant pour obtenir des informations médicales'
+    }
+];
+
+// Configuration des images pour le projet Prédiction Énergétique
+const energyImages = [
+    {
+        src: 'images/projects/energy/energyHome.png',
+        alt: 'Vue d\'ensemble',
+        description: 'Comparaison des données réelles vs prédictions de consommation et visualisation des métriques'
+    },
+    {
+        src: 'images/projects/energy/uploadData.png',
+        alt: 'Import des données',
+        description: 'Interface d\'importation des données historiques de consommation'
+    },
+    {
+        src: 'images/projects/energy/uploadDataWithConsommationType.png',
+        alt: 'Configuration',
+        description: 'Sélection du type de consommation et paramétrage des modèles de prédiction'
+    }
+];
+
 let currentImageIndex = 0;
 let currentImages = [];
 
@@ -578,6 +660,15 @@ function openModal(projectCard) {
     } else if (img.src.includes('inscription')) {
         currentImages = inscriptionImages;
         currentImageIndex = 0;
+    } else if (img.src.includes('nafar')) {
+        currentImages = nafarImages;
+        currentImageIndex = 0;
+    } else if (img.src.includes('neoscan')) {
+        currentImages = neoscanImages;
+        currentImageIndex = 0;
+    } else if (img.src.includes('energy')) {
+        currentImages = energyImages;
+        currentImageIndex = 0;
     } else {
         currentImages = [];
     }
@@ -597,7 +688,7 @@ function openModal(projectCard) {
 
     modalTitle.textContent = projectTitle;
     modalTechStack.innerHTML = techStack;
-    
+
     modal.classList.add('show');
     document.body.style.overflow = 'hidden';
     updatePagination();
@@ -614,13 +705,13 @@ function updatePagination() {
 // Fonction pour naviguer dans les images
 function navigateImages(direction) {
     if (currentImages.length === 0) return;
-    
+
     if (direction === 'next') {
         currentImageIndex = (currentImageIndex + 1) % currentImages.length;
     } else {
         currentImageIndex = (currentImageIndex - 1 + currentImages.length) % currentImages.length;
     }
-    
+
     updateModalImage();
     updatePagination();
 }

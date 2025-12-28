@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Mar Ngom | Développeur Full Stack</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
-    <meta name="description" content="Portfolio d'Ali Mar Ngom - Développeur Full Stack spécialisé en Laravel et Angular. Étudiant en Génie Logiciel à l'Université Gaston Berger.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⭐</text></svg>">
+    <meta name="description"
+        content="Portfolio d'Ali Mar Ngom - Développeur Full Stack spécialisé en Laravel et Angular. Étudiant en Génie Logiciel à l'Université Gaston Berger.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <div class="custom-cursor"></div>
 
@@ -26,6 +30,8 @@
                     <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i>Expérience</a></li>
                     <li><a href="#projets" class="nav-link"><i class="fas fa-code"></i>Projets</a></li>
                     <li><a href="#competences" class="nav-link"><i class="fas fa-laptop-code"></i>Compétences</a></li>
+                    <!-- <li><a href="#certifications" class="nav-link"><i class="fas fa-certificate"></i>Certifications</a>
+                    </li> -->
                     <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>Contact</a></li>
                     <li>
                         <button class="music-toggle nav-link" aria-label="Toggle music">
@@ -88,8 +94,12 @@
                         <span class="location"><i class="fas fa-map-marker-alt"></i> Dakar, Sénégal</span>
                     </div>
                     <div class="about-text">
-                        <p>Étudiant en Master Génie Logiciel et Gestion de Données à l'Université Gaston Berger, je suis un développeur passionné par la création d'applications web modernes et innovantes.</p>
-                        <p>Mon parcours académique et mes projets personnels m'ont permis de développer une expertise solide en développement web, particulièrement avec les frameworks modernes comme Laravel, Angular et l'utilisation de Tailwind CSS pour créer des interfaces élégantes et responsives.</p>
+                        <p>Étudiant en Master Génie Logiciel et Gestion de Données à l'Université Gaston Berger, je suis
+                            un développeur passionné par la création d'applications web modernes et innovantes.</p>
+                        <p>Mon parcours académique et mes projets personnels m'ont permis de développer une expertise
+                            solide en développement web, particulièrement avec les frameworks modernes comme Laravel,
+                            Angular et l'utilisation de Tailwind CSS pour créer des interfaces élégantes et responsives.
+                        </p>
                     </div>
                     <div class="about-stats">
                         <div class="stat-item">
@@ -201,7 +211,8 @@
                         <h3>Projet Académique</h3>
                         <h4>CCOS - Université Gaston Berger (UGB)</h4>
                         <ul class="timeline-details">
-                            <li>Développement d'une application mobile de vente et echange de produits d'occasion (Colobane Online)	</li>
+                            <li>Développement d'une application mobile de vente et echange de produits d'occasion
+                                (Colobane Online) </li>
                             <li>Travail en équipe de 3 personnes</li>
                             <li>Utilisation de Flutter et Firebase</li>
                         </ul>
@@ -221,7 +232,31 @@
         <h2 class="section-title">Mes Projets</h2>
         <!-- Projets visibles initialement -->
         <div class="projects-grid visible-projects">
-            
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">🧠</div>
+                    <h3>NAFAR</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/nafar/nafarHome.png" alt="NAFAR - Révision Intelligente" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Application web de révision intelligente conçue pour optimiser l'apprentissage. Intègre
+                        l'organisation de vidéos YouTube avec prise de notes synchronisée, un assistant IA (Claude API)
+                        pour résumés et explications, et une méthode Pomodoro intégrée.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>Angular 18+</span>
+                    <span>Claude API</span>
+                    <span>TypeScript</span>
+                    <span>Tailwind CSS</span>
+                </div>
+                <span class="confidential-tag">[Projet Privé]</span>
+            </div>
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-icon">🚛</div>
@@ -234,7 +269,9 @@
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Système complet de gestion de flotte développé en entreprise pour SAAT. Solution professionnelle incluant la gestion des utilisateurs, dépenses, paiements, missions, tracteurs, remorques et maintenance. Interface administrative avec tableaux de bord et rapports détaillés.</p>
+                    <p>Système complet de gestion de flotte développé en entreprise pour SAAT. Solution professionnelle
+                        incluant la gestion des utilisateurs, dépenses, paiements, missions, tracteurs, remorques et
+                        maintenance. Interface administrative avec tableaux de bord et rapports détaillés.</p>
                 </div>
                 <div class="tech-stack">
                     <span>Laravel</span>
@@ -244,22 +281,83 @@
                 </div>
                 <span class="confidential-tag">[Code Source Confidentiel]</span>
             </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">⚕️</div>
+                    <h3>NeoScan</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/neoscan/homeNeoScan.jpg" alt="NeoScan - Diagnostic Cancer" loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Plateforme innovante de diagnostic du cancer assistée par IA. Analyse automatisée de scanners
+                        médicaux, interface intuitive et chatbot d'accompagnement "Mariama". Développé au sein de la
+                        Commission Innovation du Club Informatique UGB.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>Angular</span>
+                    <span>Django</span>
+                    <span>Intelligence Artificielle</span>
+                    <span>Python</span>
+                </div>
+                <span class="confidential-tag">[Projet Privé]</span>
+                <!-- <a href="#" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a> -->
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">📈</div>
+                    <h3>Prédiction Énergétique</h3>
+                </div>
+                <div class="project-image">
+                    <img src="images/projects/energy/energyHome.png" alt="Prédiction Consommation Électrique"
+                        loading="lazy">
+                    <div class="project-image-overlay">
+                        <span>Voir plus</span>
+                    </div>
+                </div>
+                <div class="project-details">
+                    <p>Projet de Data Science visant à prédire la consommation d'électricité pour optimiser la
+                        production. Utilisation de modèles de séries temporelles avancés (ARIMA, Prophet, LSTM) pour
+                        analyser l'historique et fournir des prévisions précises avec intervalles de confiance.</p>
+                </div>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Machine Learning</span>
+                    <span>Séries Temporelles</span>
+                    <span>Data Viz</span>
+                </div>
+                <span class="confidential-tag">[Projet Privé]</span>
+            </div>
+
+
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-icon">🎓</div>
                     <h3>Gestion des Inscriptions Pédagogiques</h3>
                 </div>
                 <div class="project-image">
-                    <img src="images/projects/inscription/inscription.png" alt="Système de Gestion des Inscriptions" loading="lazy">
+                    <img src="images/projects/inscription/inscription.png" alt="Système de Gestion des Inscriptions"
+                        loading="lazy">
                     <div class="project-image-overlay">
                         <span>Voir plus</span>
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Application web de digitalisation des inscriptions pédagogiques universitaires avec deux interfaces distinctes :
+                    <p>Application web de digitalisation des inscriptions pédagogiques universitaires avec deux
+                        interfaces distinctes :
                     <ul class="project-features">
-                        <li><strong>Interface Étudiant :</strong> Permet aux étudiants de gérer leurs inscriptions, consulter leurs informations et suivre leur parcours académique.</li>
-                        <li><strong>Interface Administration :</strong> Offre aux administrateurs un contrôle complet sur la gestion des étudiants, formations, niveaux et informations administratives, avec un système de droits d'accès sécurisé.</li>
+                        <li><strong>Interface Étudiant :</strong> Permet aux étudiants de gérer leurs inscriptions,
+                            consulter leurs informations et suivre leur parcours académique.</li>
+                        <li><strong>Interface Administration :</strong> Offre aux administrateurs un contrôle complet
+                            sur la gestion des étudiants, formations, niveaux et informations administratives, avec un
+                            système de droits d'accès sécurisé.</li>
                     </ul>
                     </p>
                 </div>
@@ -273,20 +371,22 @@
                     <i class="fab fa-github"></i> Voir sur GitHub
                 </a>
             </div>
-           
+
             <div class="project-card">
                 <div class="project-header">
                     <div class="project-icon">🚀</div>
                     <h3>Jaapalanté</h3>
                 </div>
                 <div class="project-image">
-                    <img src="images/projects/jaapalante/jaapalanteHome.png" alt="Application Jaapalanté" loading="lazy">
+                    <img src="images/projects/jaapalante/jaapalanteHome.png" alt="Application Jaapalanté"
+                        loading="lazy">
                     <div class="project-image-overlay">
                         <span>Voir plus</span>
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Application mobile connectant des utilisateurs ayant besoin de services avec de jeunes prestataires locaux au Sénégal. Développement des interfaces Login, Home et Notification.</p>
+                    <p>Application mobile connectant des utilisateurs ayant besoin de services avec de jeunes
+                        prestataires locaux au Sénégal. Développement des interfaces Login, Home et Notification.</p>
                 </div>
                 <div class="tech-stack">
                     <span>Flutter</span>
@@ -300,7 +400,7 @@
         </div>
 
         <!-- Projets cachés initialement -->
-         
+
         <div class="projects-grid hidden-projects">
             <div class="project-card">
                 <div class="project-header">
@@ -314,7 +414,10 @@
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Jeu de Morpion (Tic-tac-toe) interactif avec interface graphique moderne. Jouez contre un ami en mode deux joueurs, avec choix personnalisé des symboles (X ou O), animations fluides de victoire, et interface intuitive. Le jeu inclut un système de score et des effets visuels pour une expérience de jeu immersive.</p>
+                    <p>Jeu de Morpion (Tic-tac-toe) interactif avec interface graphique moderne. Jouez contre un ami en
+                        mode deux joueurs, avec choix personnalisé des symboles (X ou O), animations fluides de
+                        victoire, et interface intuitive. Le jeu inclut un système de score et des effets visuels pour
+                        une expérience de jeu immersive.</p>
                 </div>
                 <div class="tech-stack">
                     <span>HTML</span>
@@ -327,7 +430,7 @@
                 <a href="https://alimar440.github.io/TIC-TAC-TOE_GAME/" class="project-link" target="_blank">
                     <i class="fas fa-gamepad"></i> Jouer
                 </a>
-                
+
             </div>
             <div class="project-card">
                 <div class="project-header">
@@ -335,13 +438,17 @@
                     <h3>TurboSearch</h3>
                 </div>
                 <div class="project-image">
-                    <img src="images/projects/turboSearch/turboSearchHome.png" alt="Application TurboSearch" loading="lazy">
+                    <img src="images/projects/turboSearch/turboSearchHome.png" alt="Application TurboSearch"
+                        loading="lazy">
                     <div class="project-image-overlay">
                         <span>Voir plus</span>
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Application de gestion de parc automobile avec recherche rapide via tables de hachage. Interface graphique intuitive et système de recherche optimisé. Inclut une analyse comparative des performances des différentes fonctions de hachage avec visualisation graphique des résultats.</p>
+                    <p>Application de gestion de parc automobile avec recherche rapide via tables de hachage. Interface
+                        graphique intuitive et système de recherche optimisé. Inclut une analyse comparative des
+                        performances des différentes fonctions de hachage avec visualisation graphique des résultats.
+                    </p>
                 </div>
                 <div class="tech-stack">
                     <span>C++</span>
@@ -364,7 +471,8 @@
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Site vitrine moderne pour une agence de voyage avec design responsive et composants réutilisables. Animations fluides et galerie interactive optimisée.</p>
+                    <p>Site vitrine moderne pour une agence de voyage avec design responsive et composants
+                        réutilisables. Animations fluides et galerie interactive optimisée.</p>
                 </div>
                 <div class="tech-stack">
                     <span>HTML5</span>
@@ -378,7 +486,7 @@
                     <i class="fas fa-gamepad"></i> Live Demo
                 </a>
             </div>
-            
+
 
 
             <div class="project-card">
@@ -393,7 +501,8 @@
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Jeu web éducatif de quiz avec système de classement. Développement du flux de jeu et chargement dynamique des questions.</p>
+                    <p>Jeu web éducatif de quiz avec système de classement. Développement du flux de jeu et chargement
+                        dynamique des questions.</p>
                 </div>
                 <div class="tech-stack">
                     <span>HTML</span>
@@ -413,13 +522,16 @@
                     <h3>Logiciel(PC) de simulation d'Algorithmes d'Ordonnancement</h3>
                 </div>
                 <div class="project-image">
-                    <img src="images/projects/simulation.png" alt="Simulation d'Algorithmes d'Ordonnancement" loading="lazy">
+                    <img src="images/projects/simulation.png" alt="Simulation d'Algorithmes d'Ordonnancement"
+                        loading="lazy">
                     <div class="project-image-overlay">
                         <span>Voir plus</span>
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Logiciel interactif de simulation d'algorithmes d'ordonnancement (PCTE, Tourniquet, FIFO, PTCER, PGPR) avec visualisation en temps réel et interface intuitive pour l'analyse comparative des performances.</p>
+                    <p>Logiciel interactif de simulation d'algorithmes d'ordonnancement (PCTE, Tourniquet, FIFO, PTCER,
+                        PGPR) avec visualisation en temps réel et interface intuitive pour l'analyse comparative des
+                        performances.</p>
                 </div>
                 <div class="tech-stack">
                     <span>C++</span>
@@ -443,7 +555,9 @@
                     </div>
                 </div>
                 <div class="project-details">
-                    <p>Dashboard moderne dédié aux amateurs de manga, manhua et manhwa. Interface épurée offrant un historique de lecture, une bibliothèque organisée et un design responsive. Développé en HTML et CSS pur pour une expérience utilisateur fluide et intuitive.</p>
+                    <p>Dashboard moderne dédié aux amateurs de manga, manhua et manhwa. Interface épurée offrant un
+                        historique de lecture, une bibliothèque organisée et un design responsive. Développé en HTML et
+                        CSS pur pour une expérience utilisateur fluide et intuitive.</p>
                 </div>
                 <div class="tech-stack">
                     <span>HTML5</span>
@@ -457,7 +571,7 @@
                 </a>
             </div>
 
-            
+
         </div>
 
         <div class="buttons-container">
@@ -558,6 +672,43 @@
         </div>
     </section>
 
+    <!-- Section Certifications -->
+    <!-- <section id="certifications" class="section">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-grid">
+           
+            <div class="certification-card">
+                <div class="cert-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <div class="cert-content">
+                    <h3>Certification Placeholder</h3>
+                    <div class="cert-issuer">
+                        <i class="fas fa-university"></i>
+                        <span>Organisation</span>
+                    </div>
+                    <p class="cert-date">Obtenu en 2024</p>
+                </div>
+                <a href="#" class="cert-link" target="_blank">Voir le certificat</a>
+            </div>
+
+            <div class="certification-card">
+                <div class="cert-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="cert-content">
+                    <h3>Autre Certification</h3>
+                    <div class="cert-issuer">
+                        <i class="fas fa-building"></i>
+                        <span>Udemy / Coursera</span>
+                    </div>
+                    <p class="cert-date">Obtenu en 2023</p>
+                </div>
+                <a href="#" class="cert-link" target="_blank">Voir le certificat</a>
+            </div>
+        </div>
+    </section> -->
+
     <!-- Section Contact -->
     <section id="contact" class="section">
         <h2 class="section-title">Contact</h2>
@@ -568,13 +719,16 @@
                     alingom2018@gmail.com
                 </a>
                 <div class="social-links">
-                    <a href="https://github.com/alimar440" target="_blank" class="social-link github" aria-label="Github">
+                    <a href="https://github.com/alimar440" target="_blank" class="social-link github"
+                        aria-label="Github">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/ali-mar-ngom-311603173/" target="_blank" class="social-link linkedin" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/ali-mar-ngom-311603173/" target="_blank"
+                        class="social-link linkedin" aria-label="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="https://wa.me/221777605616" target="_blank" class="social-link whatsapp" aria-label="WhatsApp">
+                    <a href="https://wa.me/221777605616" target="_blank" class="social-link whatsapp"
+                        aria-label="WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
                 </div>
@@ -612,4 +766,5 @@
 
     <script src="script.js"></script>
 </body>
-</html> 
+
+</html>
