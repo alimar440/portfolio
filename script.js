@@ -367,52 +367,52 @@ const totalImages = document.getElementById('totalImages');
 // Images du projet SAAT
 const saatImages = [
     {
-        src: 'images/projects/saat/saatDashboard.png',
+        src: 'images/projects/saat/saatDashboard.webp',
         alt: 'Dashboard SAAT',
         description: 'Tableau de bord principal avec vue d\'ensemble du système'
     },
     {
-        src: 'images/projects/saat/saatLogin.png',
+        src: 'images/projects/saat/saatLogin.webp',
         alt: 'Interface de connexion SAAT',
         description: 'Page de connexion sécurisée'
     },
     {
-        src: 'images/projects/saat/saatProfil.png',
+        src: 'images/projects/saat/saatProfil.webp',
         alt: 'Profil utilisateur',
         description: 'Gestion du profil et des informations personnelles'
     },
     {
-        src: 'images/projects/saat/saatDepense.png',
+        src: 'images/projects/saat/saatDepense.webp',
         alt: 'Gestion des dépenses',
         description: 'Interface de suivi et gestion des dépenses de la flotte'
     },
     {
-        src: 'images/projects/saat/saatUser.png',
+        src: 'images/projects/saat/saatUser.webp',
         alt: 'Gestion des employés',
         description: 'Gestion des utilisateurs avec leurs rôles avec possibilité d\'activer ou de désactiver un compte'
     },
     {
-        src: 'images/projects/saat/saatTracteur.png',
+        src: 'images/projects/saat/saatTracteur.webp',
         alt: 'Gestion des tracteurs',
         description: 'Suivi et gestion des tracteurs de la flotte'
     },
     {
-        src: 'images/projects/saat/saatRemorque.png',
+        src: 'images/projects/saat/saatRemorque.webp',
         alt: 'Gestion des remorques',
         description: 'Suivi et gestion des remorques de la flotte'
     },
     {
-        src: 'images/projects/saat/saatPaiement.png',
+        src: 'images/projects/saat/saatPaiement.webp',
         alt: 'Gestion des paiements',
         description: 'Suivi et gestion des paiements et transactions'
     },
     {
-        src: 'images/projects/saat/saatMission.png',
+        src: 'images/projects/saat/saatMission.webp',
         alt: 'Gestion des missions',
         description: 'Planification et suivi des missions de transport'
     },
     {
-        src: 'images/projects/saat/saatMaintenance.png',
+        src: 'images/projects/saat/saatMaintenance.webp',
         alt: 'Maintenance des véhicules',
         description: 'Suivi et planification de la maintenance des véhicules'
     }
@@ -421,37 +421,37 @@ const saatImages = [
 // Configuration des images pour le projet Jaapalante
 const jaapalanteImages = [
     {
-        src: 'images/projects/jaapalante/jaapalanteHome.png',
+        src: 'images/projects/jaapalante/jaapalanteHome.webp',
         alt: 'Page d\'accueil Jaapalante',
         description: 'Page d\'accueil de l\'application Jaapalante montrant une filtre des services disponibles '
     },
     {
-        src: 'images/projects/jaapalante/jaapalanteProfil.png',
+        src: 'images/projects/jaapalante/jaapalanteProfil.webp',
         alt: 'Page de profil Jaapalante',
         description: 'Interface de profil utilisateur avec les informations personnelles'
     },
     {
-        src: 'images/projects/jaapalante/jaapalanteNotification.png',
+        src: 'images/projects/jaapalante/jaapalanteNotification.webp',
         alt: 'Notifications Jaapalante',
         description: 'Système de notifications pour suivre les activités et demandes'
     },
     {
-        src: 'images/projects/jaapalante/jaapalanteService.png',
+        src: 'images/projects/jaapalante/jaapalanteService.webp',
         alt: 'Services Jaapalante',
         description: 'Interface de gestion des services proposés'
     },
     {
-        src: 'images/projects/jaapalante/jaapalanteAjout.png',
+        src: 'images/projects/jaapalante/jaapalanteAjout.webp',
         alt: 'Ajout de service Jaapalante',
         description: 'Interface d\'ajout de nouveau service'
     },
     {
-        src: 'images/projects/jaapalante/jaapalanteLogin.png',
+        src: 'images/projects/jaapalante/jaapalanteLogin.webp',
         alt: 'Page de connexion Jaapalante',
         description: 'Interface de connexion sécurisée'
     },
     {
-        src: 'images/projects/jaapalante/jaapalanteAccepteService.png',
+        src: 'images/projects/jaapalante/jaapalanteAccepteService.webp',
         alt: 'Acceptation de service Jaapalante',
         description: 'Interface d\'acceptation et de gestion des services'
     }
@@ -460,32 +460,32 @@ const jaapalanteImages = [
 // Configuration des images pour le projet TurboSearch
 const turboSearchImages = [
     {
-        src: 'images/projects/turboSearch/turboSearchHome.png',
+        src: 'images/projects/turboSearch/turboSearchHome.webp',
         alt: 'Accueil TurboSearch',
         description: 'Page d\'accueil de l\'application avec l\'interface principale'
     },
     {
-        src: 'images/projects/turboSearch/turboSearchInsertion.png',
+        src: 'images/projects/turboSearch/turboSearchInsertion.webp',
         alt: 'Insertion de véhicule',
         description: 'Interface d\'ajout de nouveau véhicule dans le système'
     },
     {
-        src: 'images/projects/turboSearch/turboSearchSuppretion.png',
+        src: 'images/projects/turboSearch/turboSearchSuppretion.webp',
         alt: 'Suppression de véhicule',
         description: 'Interface de suppression de véhicule du parc automobile'
     },
     {
-        src: 'images/projects/turboSearch/turboSearchDatabase.png',
+        src: 'images/projects/turboSearch/turboSearchDatabase.webp',
         alt: 'Base de données',
         description: 'Vue de la base de données des véhicules'
     },
     {
-        src: 'images/projects/turboSearch/turboSearchRecherche.png',
+        src: 'images/projects/turboSearch/turboSearchRecherche.webp',
         alt: 'Recherche de véhicule',
         description: 'Interface de recherche rapide avec système de hachage'
     },
     {
-        src: 'images/projects/turboSearch/turboSearchComparaison.png',
+        src: 'images/projects/turboSearch/turboSearchComparaison.webp',
         alt: 'Comparaison des fonctions de hachage',
         description: 'Graphique comparatif des performances des différentes fonctions de hachage utilisées'
     }
@@ -494,17 +494,17 @@ const turboSearchImages = [
 // Configuration des images pour le projet TIC-TAC-TOE
 const tictactoeImages = [
     {
-        src: 'images/projects/tictactoe/TIC-TAC-TOE_GAME.png',
+        src: 'images/projects/tictactoe/TIC-TAC-TOE_GAME.webp',
         alt: 'Interface principale du jeu',
         description: 'Interface principale du jeu avec la grille de morpion interactive'
     },
     {
-        src: 'images/projects/tictactoe/tictactoeChoixSymbole.png',
+        src: 'images/projects/tictactoe/tictactoeChoixSymbole.webp',
         alt: 'Choix du symbole',
         description: 'Interface de sélection du symbole (X ou O) pour chaque joueur'
     },
     {
-        src: 'images/projects/tictactoe/tictactoeResultat.png',
+        src: 'images/projects/tictactoe/tictactoeResultat.webp',
         alt: 'Résultat de la partie',
         description: 'Affichage du résultat avec animation de victoire'
     }
@@ -513,27 +513,27 @@ const tictactoeImages = [
 // Configuration des images pour le projet Inscription Pédagogique
 const inscriptionImages = [
     {
-        src: 'images/projects/inscription/login.png',
+        src: 'images/projects/inscription/login.webp',
         alt: 'Page de connexion',
         description: 'Interface de connexion sécurisée pour les étudiants et administrateurs'
     },
     {
-        src: 'images/projects/inscription/inscription.png',
+        src: 'images/projects/inscription/inscription.webp',
         alt: 'Page d\'accueil',
         description: 'Page d\'accueil du système d\'inscription pédagogique'
     },
     {
-        src: 'images/projects/inscription/administrationPublieMessagePourEtudiant.png',
+        src: 'images/projects/inscription/administrationPublieMessagePourEtudiant.webp',
         alt: 'Publication de Messages',
         description: 'Interface administrateur pour la publication de messages aux étudiants'
     },
     {
-        src: 'images/projects/inscription/informationEtudiant.png',
+        src: 'images/projects/inscription/informationEtudiant.webp',
         alt: 'Informations Étudiant',
         description: 'Vue détaillée des informations de l\'étudiant'
     },
     {
-        src: 'images/projects/inscription/inscriptionEtudiant.png',
+        src: 'images/projects/inscription/inscriptionEtudiant.webp',
         alt: 'Inscription Étudiant',
         description: 'Processus d\'inscription pour les étudiants'
     },
@@ -547,32 +547,32 @@ const inscriptionImages = [
 // Configuration des images pour le projet NAFAR
 const nafarImages = [
     {
-        src: 'images/projects/nafar/nafarHome.png',
+        src: 'images/projects/nafar/nafarHome.webp',
         alt: 'Accueil Nafar',
         description: 'Page d\'accueil de la plateforme de révision'
     },
     {
-        src: 'images/projects/nafar/listeVideo.png',
+        src: 'images/projects/nafar/listeVideo.webp',
         alt: 'Organisation Vidéo',
         description: 'Organisation structurée des vidéos YouTube pour un parcours d\'apprentissage cohérent'
     },
     {
-        src: 'images/projects/nafar/visionnageVideoAvecResume.png',
+        src: 'images/projects/nafar/visionnageVideoAvecResume.webp',
         alt: 'Visionnage intelligent',
         description: 'Lecteur vidéo intégrant des résumés générés par IA pour une compréhension rapide'
     },
     {
-        src: 'images/projects/nafar/priseNoteIntelligent.png',
+        src: 'images/projects/nafar/priseNoteIntelligent.webp',
         alt: 'Prise de notes',
         description: 'Système de prise de notes synchronisé avec les timestamps des vidéos'
     },
     {
-        src: 'images/projects/nafar/chatbot.png',
+        src: 'images/projects/nafar/chatbot.webp',
         alt: 'Assistant IA',
         description: 'Dialoguez avec l\'assistant Claude pour obtenir des explications et approfondir les sujets'
     },
     {
-        src: 'images/projects/nafar/pomodoroEtSuivieProductivité.png',
+        src: 'images/projects/nafar/pomodoroEtSuivieProductivité.webp',
         alt: 'Productivité',
         description: 'Mode Focus avec timer Pomodoro et statistiques de progression'
     }
@@ -581,27 +581,27 @@ const nafarImages = [
 // Configuration des images pour le projet NeoScan
 const neoscanImages = [
     {
-        src: 'images/projects/neoscan/homeNeoScan.jpg',
+        src: 'images/projects/neoscan/homeNeoScan.webp',
         alt: 'Accueil NeoScan',
         description: 'Plateforme de diagnostic assistée par IA pour la détection du cancer'
     },
     {
-        src: 'images/projects/neoscan/selectionRadioaAnalyser.jpg',
+        src: 'images/projects/neoscan/selectionRadioaAnalyser.webp',
         alt: 'Interface d\'analyse',
         description: 'Interface intuitive pour l\'import et l\'analyse des images médicales'
     },
     {
-        src: 'images/projects/neoscan/ResultatAnalyse.jpg',
+        src: 'images/projects/neoscan/ResultatAnalyse.webp',
         alt: 'Résultats de Diagnostic',
         description: 'Affichage détaillé des résultats avec probabilités et zones détectées'
     },
     {
-        src: 'images/projects/neoscan/chatBotMariama.jpg',
+        src: 'images/projects/neoscan/chatBotMariama.webp',
         alt: 'Mariama - Assistant IA',
         description: 'Chatbot intelligent "Mariama" pour accompagner les patients'
     },
     {
-        src: 'images/projects/neoscan/discutionAvecMariama.jpg',
+        src: 'images/projects/neoscan/discutionAvecMariama.webp',
         alt: 'Discussion Chatbot',
         description: 'Interaction fluide avec l\'assistant pour obtenir des informations médicales'
     }
@@ -610,17 +610,17 @@ const neoscanImages = [
 // Configuration des images pour le projet Prédiction Énergétique
 const energyImages = [
     {
-        src: 'images/projects/energy/energyHome.png',
+        src: 'images/projects/energy/energyHome.webp',
         alt: 'Vue d\'ensemble',
         description: 'Comparaison des données réelles vs prédictions de consommation et visualisation des métriques'
     },
     {
-        src: 'images/projects/energy/uploadData.png',
+        src: 'images/projects/energy/uploadData.webp',
         alt: 'Import des données',
         description: 'Interface d\'importation des données historiques de consommation'
     },
     {
-        src: 'images/projects/energy/uploadDataWithConsommationType.png',
+        src: 'images/projects/energy/uploadDataWithConsommationType.webp',
         alt: 'Configuration',
         description: 'Sélection du type de consommation et paramétrage des modèles de prédiction'
     }
