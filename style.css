@@ -102,9 +102,9 @@ body {
 }
 
 .nav-content {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
-    padding: 1rem 2rem;
+    padding: 0.8rem 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,7 +121,7 @@ body {
 
 .nav-menu {
     display: flex;
-    gap: 2rem;
+    gap: 1.2rem;
     list-style: none;
     align-items: center;
 }
@@ -130,13 +130,14 @@ body {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     padding: 0.5rem 0;
     transition: var(--transition);
     opacity: 0.8;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
+    white-space: nowrap;
 }
 
 .nav-link i {
@@ -1503,6 +1504,26 @@ footer p {
     font-size: 2.5rem;
     color: var(--secondary-color);
     margin-bottom: 0.5rem;
+}
+
+.cert-image {
+    width: 100%;
+    aspect-ratio: 16/11;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.cert-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover .cert-image img {
+    transform: scale(1.05);
 }
 
 .cert-content h3 {
