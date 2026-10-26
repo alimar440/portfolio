@@ -113,10 +113,7 @@ body {
 .nav-brand {
     font-size: 1.5rem;
     font-weight: 700;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--primary-color);
 }
 
 .nav-menu {
@@ -327,10 +324,7 @@ body {
     font-size: 3rem;
     margin-bottom: 4rem;
     font-weight: 800;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--primary-color);
 }
 
 /* Hero Section */
@@ -386,10 +380,7 @@ body {
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--primary-color);
 }
 
 .hero h2 {
@@ -819,13 +810,16 @@ body {
 /* Timeline */
 .timeline {
     position: relative;
-    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 2rem 0;
 }
 
 .timeline::before {
-    content: '';
+    content: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -836,11 +830,13 @@ body {
 
 .timeline-item {
     position: relative;
-    padding-left: 3rem;
-    margin-bottom: 3rem;
+    min-width: 0;
+    padding-left: 0;
+    margin-bottom: 0;
 }
 
 .timeline-dot {
+    display: none;
     position: absolute;
     left: -6px;
     top: 0;
@@ -853,6 +849,7 @@ body {
 }
 
 .timeline-content {
+    height: 100%;
     background: var(--card-bg);
     border-radius: 1rem;
     padding: 2rem;
@@ -1095,7 +1092,11 @@ footer p {
     }
 
     .timeline-item {
-        padding-left: 2rem;
+        padding-left: 0;
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -1182,11 +1183,7 @@ footer p {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    color: var(--text-color);
-    background: var(--gradient-primary);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    color: var(--primary-color);
 }
 
 .location {
@@ -1987,3 +1984,33 @@ button:hover~.custom-cursor,
     color: var(--accent-color);
     font-weight: 600;
 }
+/* Parcours horizontal, de la licence au master. */
+#parcours .education-container {
+    max-width: 1200px;
+}
+#parcours .education-timeline {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 4rem;
+    padding-left: 0;
+}
+#parcours .education-timeline::before,
+#parcours .education-item::before {
+    content: none;
+}
+#parcours .education-item {
+    margin-bottom: 0;
+    min-width: 0;
+}
+#parcours .education-item:hover {
+    transform: translateY(-5px);
+}
+#parcours .education-item::after {
+    content: none;
+}
+@media (max-width: 768px) {
+    #parcours .education-timeline {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    }

@@ -626,6 +626,34 @@ const energyImages = [
     }
 ];
 
+const malariaImages = [
+    {
+        src: 'images/projects/malariaIA/home.png',
+        alt: 'Accueil de MalariaIA',
+        description: "Tableau de bord et accès à l'espace de diagnostic et aux analyses récentes."
+    },
+    {
+        src: 'images/projects/malariaIA/diagnostique_avant.png',
+        alt: 'Espace de diagnostic MalariaIA',
+        description: "Interface de préparation d'une analyse de frottis sanguin."
+    },
+    {
+        src: 'images/projects/malariaIA/diagnostique_apres.png',
+        alt: "Résultats de l'analyse MalariaIA",
+        description: "Visualisation des résultats et des zones identifiées par le modèle."
+    },
+    {
+        src: 'images/projects/malariaIA/cellule.png',
+        alt: 'Cellules annotées sur un frottis sanguin',
+        description: "Détail des cellules détectées avec leurs annotations et scores de confiance."
+    },
+    {
+        src: 'images/projects/malariaIA/historiqu.png',
+        alt: 'Historique des analyses MalariaIA',
+        description: "Consultation de l'historique des analyses et des dossiers enregistrés."
+    }
+];
+
 let currentImageIndex = 0;
 let currentImages = [];
 
@@ -645,7 +673,10 @@ function openModal(projectCard) {
     const techStack = projectCard.querySelector('.tech-stack').innerHTML;
 
     // Déterminer quel projet est ouvert
-    if (img.src.includes('jaapalante')) {
+    if (img.src.includes('malariaIA')) {
+        currentImages = malariaImages;
+        currentImageIndex = 0;
+    } else if (img.src.includes('jaapalante')) {
         currentImages = jaapalanteImages;
         currentImageIndex = 0;
     } else if (img.src.includes('saat')) {
